@@ -70,7 +70,7 @@ const BoxTitle = styled.p`
   margin-bottom: 3rem;
 `;
 
-const BoxContent = styled.p`
+const BoxContent = styled.div`
   font-size: 1.8rem;
   line-height: 1.5;
 `;

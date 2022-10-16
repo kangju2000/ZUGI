@@ -37,12 +37,13 @@ const Menu = styled.div`
   top: 0;
   left: 0;
   width: 36rem;
-  height: 100vh;
+  height: 100%;
   font-size: 1.8rem;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: ${({ theme }) => theme.color.white};
+  z-index: 999;
   li {
     padding: 1rem;
     cursor: pointer;

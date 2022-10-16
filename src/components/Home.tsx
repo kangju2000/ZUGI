@@ -1,7 +1,7 @@
 import { Container } from '../../styles/theme';
 import styled from 'styled-components';
 import Image from 'next/image';
-import profileImg from '../../public/image.png';
+import profileImg from '../../public/profile.jpg';
 import GithubIcon from '../../public/github.svg';
 import InstagramIcon from '../../public/instagram.svg';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ const Home = () => {
           <Image alt="주기" src={profileImg} width="250" height="250" objectFit="cover" />
         </ProfileImage>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <h1 style={{ fontSize: '3.2rem' }}>Juhyeok Kang</h1>
+          <h1 style={{ fontSize: '3.2rem', fontWeight: '600' }}>Juhyeok Kang</h1>
           <p style={{ margin: '1rem 0 7rem' }}>Junior Front-end Developer</p>
           <Contact>
             <Link href="https://github.com/kangju2000">
