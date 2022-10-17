@@ -1,5 +1,6 @@
-import { Container } from '../../styles/theme';
+import { Container } from '../../../styles/theme';
 import styled from 'styled-components';
+import ProgressBar from './ProgressBar';
 
 const About = () => {
   const profile = [
@@ -15,6 +16,7 @@ const About = () => {
     { key: 'React.js', value: '60%' },
     { key: 'TypeScript', value: '30%' },
   ];
+
   return (
     <AboutContainer>
       <Box>
@@ -44,9 +46,12 @@ const About = () => {
         <Box>
           <BoxTitle>SKILLS</BoxTitle>
           <BoxContent>
-            {/* {skill.map((item) => (
-              <p key={item.key}>{item.key}</p>
-            ))} */}
+            {skill.map((item) => (
+              <div style={{ display: 'flex', alignItems: 'center' }} key={item.key}>
+                <p style={{ width: '13rem' }}>{item.key}</p>
+                <ProgressBar percent={item.value} />
+              </div>
+            ))}
           </BoxContent>
         </Box>
       </BoxContainer>
